@@ -1,0 +1,91 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #333;
+  font-family: "Montserrat", sans-serif;
+}
+
+.main-color-name {
+  color: #039ff0;
+}
+
+.shadow-bg {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+nav {
+  text-transform: uppercase;
+  z-index: 100;
+  transition: 0.6s;
+}
+nav .navbar-brand {
+  font-weight: bold;
+}
+nav .navbar-tooggler {
+  padding: 10px;
+}
+nav .nav-link, nav .navbar-nav .nav-link.show, nav .navbar-brand, nav .fa-bars {
+  color: #fff;
+}
+nav .nav-link:focus, nav .nav-link:hover, nav .navbar-brand:hover, nav .navbar-nav .nav-link.active, nav .navbar-nav .nav-link.show {
+  color: #039ff0;
+}
+
+.hero-img {
+  position: relative;
+  height: 100vh;
+  background-image: url("../img/bmw-small.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: 80%;
+  z-index: 0;
+}
+.hero-img .hero-text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100%;
+  color: #fff;
+}
+.hero-img .hero-text h1 {
+  text-transform: uppercase;
+}
+.hero-img .hero-shadow {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.35);
+  z-index: -1;
+}
+.hero-img .fa-chevron-down {
+  position: absolute;
+  left: 50%;
+  bottom: 20px;
+  transform: translateX(-50%);
+  font-size: 30px;
+  color: #fff;
+}
+
+@media (max-height: 769px) and (max-width: 486px) {
+  nav {
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+}
+@media (min-width: 768px) {
+  .hero-img {
+    background-image: url("../img/bmw-big.jpg");
+  }
+  .hero-img .hero-text h1 {
+    font-size: 42px;
+  }
+  .hero-img .hero-text p {
+    font-size: 22px;
+  }
+}/*# sourceMappingURL=main.css.map */
