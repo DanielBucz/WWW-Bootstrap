@@ -122,6 +122,23 @@ nav {
         }
     }
 }
+.cars {
+    .carousel-item {
+        height: 600px;
+    }
+    .carousel-caption {
+        left: 0;
+        right: 0;
+        padding: 40px 0;
+        background-color: rgba(0, 0, 0,.6);
+    }
+    .carousel-indicators {
+        padding-bottom: 20px;
+    }
+    .card {
+        margin: 0 10px;
+    }
+}
 @media (max-height: 769px) and (max-width: 486px) {
     nav {
         background-color: rgba(0,0,0, .8);

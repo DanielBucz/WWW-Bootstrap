@@ -127,6 +127,22 @@ nav .nav-link:focus, nav .nav-link:hover, nav .navbar-brand:hover, nav .navbar-n
   font-size: 24px;
 }
 
+.cars .carousel-item {
+  height: 600px;
+}
+.cars .carousel-caption {
+  left: 0;
+  right: 0;
+  padding: 40px 0;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+.cars .carousel-indicators {
+  padding-bottom: 20px;
+}
+.cars .card {
+  margin: 0 10px;
+}
+
 @media (max-height: 769px) and (max-width: 486px) {
   nav {
     background-color: rgba(0, 0, 0, 0.8);
