@@ -8,7 +8,7 @@ html {
     scroll-padding-top: 74px;
 }
 body {
-    background-color: #333;
+    background-color: colors.$bg-color;
     font-family: 'Montserrat', sans-serif;
 }
 .main-color-name {
@@ -137,6 +137,44 @@ nav {
     }
     .card {
         margin: 0 10px;
+    }
+}
+.prices {
+    .price-item {
+        padding: 30px;
+        margin: 0 10px;
+        text-align: center;
+        background-color: #fff;
+        box-shadow: 10px 10px 10px #ddd;
+        transition: transform .3s;
+        .price-title {
+            padding-bottom: 10px;
+            border-bottom: 1px solid #ddd;
+            color: colors.$main-color;
+        }
+        .feature-list {
+            list-style: none;
+            padding-left: 0;
+            .feature {
+            padding: 5px 0;
+            }
+            span {
+                font-weight: bold;
+            }
+        }
+        .price {
+            font-weight: bold;
+            font-size: 22px;
+        }
+    }
+    .prices-info {
+        margin-top: 20px;
+        a {
+            text-decoration: none;
+        }
+    }
+    .price-item:hover {
+        transform: scale(1.05);
     }
 }
 @media (max-height: 769px) and (max-width: 486px) {

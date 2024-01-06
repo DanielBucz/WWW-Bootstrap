@@ -9,7 +9,7 @@ html {
 }
 
 body {
-  background-color: #333;
+  background-color: #ebecf2;
   font-family: "Montserrat", sans-serif;
 }
 
@@ -141,6 +141,43 @@ nav .nav-link:focus, nav .nav-link:hover, nav .navbar-brand:hover, nav .navbar-n
 }
 .cars .card {
   margin: 0 10px;
+}
+
+.prices .price-item {
+  padding: 30px;
+  margin: 0 10px;
+  text-align: center;
+  background-color: #fff;
+  box-shadow: 10px 10px 10px #ddd;
+  transition: transform 0.3s;
+}
+.prices .price-item .price-title {
+  padding-bottom: 10px;
+  border-bottom: 1px solid #ddd;
+  color: #039ff0;
+}
+.prices .price-item .feature-list {
+  list-style: none;
+  padding-left: 0;
+}
+.prices .price-item .feature-list .feature {
+  padding: 5px 0;
+}
+.prices .price-item .feature-list span {
+  font-weight: bold;
+}
+.prices .price-item .price {
+  font-weight: bold;
+  font-size: 22px;
+}
+.prices .prices-info {
+  margin-top: 20px;
+}
+.prices .prices-info a {
+  text-decoration: none;
+}
+.prices .price-item:hover {
+  transform: scale(1.05);
 }
 
 @media (max-height: 769px) and (max-width: 486px) {
