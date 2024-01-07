@@ -1,4 +1,5 @@
 @use "./colors" as colors;
+@use "./animations" as *;
 * {
   box-sizing: border-box;
   margin: 0;
@@ -10,6 +11,7 @@ html {
 body {
   background-color: colors.$bg-color;
   font-family: "Montserrat", sans-serif;
+  overflow-x: hidden;
 }
 .main-color-name {
   color: colors.$main-color;
@@ -107,7 +109,7 @@ nav {
     font-size: 14px;
   }
   .about-us-card {
-    transition: color 0.3s;
+    transition: all 0.3s;
   }
   .about-us-card:hover {
     color: colors.$main-color;
@@ -285,6 +287,7 @@ nav {
 @media (min-width: 768px) {
   .hero-img {
     background-image: url("../img/bmw-big.jpg");
+    background-position: center;
     .hero-text {
       h1 {
         font-size: 42px;

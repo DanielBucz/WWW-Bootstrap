@@ -11,12 +11,13 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="./css/main.css">
     <script src="https://kit.fontawesome.com/f33ec96b69.js" crossorigin="anonymous"></script>
 </head>
 
-<body>
-    <nav class="navbar navbar-expand-lg  position-fixed top-0 w-100 py-3">
+<body data-bs-spy="scroll" data-bs-target="#navId">
+    <nav class="navbar navbar-expand-lg  position-fixed top-0 w-100 py-3" id="navId">
         <div class="container">
             <a class="navbar-brand" href="#">
                 <i class="fa-solid fa-car"></i> Dream <span class="main-color-name">cars</span>
@@ -27,7 +28,7 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                 <div class="navbar-nav ms-auto text-light">
-                    <a class="nav-link active" href="#">Home</a>
+                    <a class="nav-link" href="#">Home</a>
                     <a class="nav-link" href="#about-us">o nas</a>
                     <a class="nav-link" href="#cars">Flota</a>
                     <a class="nav-link" href="#prices">Cennik</a>
@@ -45,7 +46,7 @@
             <a class="btn btn-outline-light mt-2 text-uppercase" href="#about-us">Poznaj nas</a>
         </div>
         <a href="#about-us">
-            <i class="fa-solid fa-chevron-down"></i>
+            <i class="fa-solid fa-chevron-down bounce-top"></i>
         </a>
         <div class="hero-shadow"></div>
     </header>
@@ -55,42 +56,42 @@
                 <h2 class="section-title">O nas</h2>
                 <div class="underline"></div>
                 <div class="row">
-                    <div class="col-sm-6 col-md-4 text-center about-us-card">
+                    <div data-aos="zoom-in" data-aos-delay="100" class="col-sm-6 col-md-4 text-center about-us-card">
                         <p>
                             <i class="fa-solid fa-gauge"></i>
                         </p>
                         <p class="about-us-card-title mb-1">Wyjątkowe auta</p>
                         <p class="about-us-card-text">Dzięki nam spełnisz swoje marzenia</p>
                     </div>
-                    <div class="col-sm-6 col-md-4 text-center about-us-card">
+                    <div data-aos="zoom-in" data-aos-delay="150" class="col-sm-6 col-md-4 text-center about-us-card">
                         <p>
                             <i class="fa-solid fa-car-side"></i>
                         </p>
                         <p class="about-us-card-title mb-1">Sprawdzone modele</p>
                         <p class="about-us-card-text">Nie musisz się martwić o bezpieczeństwo</p>
                     </div>
-                    <div class="col-sm-6 col-md-4 text-center about-us-card">
+                    <div data-aos="zoom-in" data-aos-delay="200" class="col-sm-6 col-md-4 text-center about-us-card">
                         <p>
                             <i class="fa-solid fa-horse"></i>
                         </p>
                         <p class="about-us-card-title mb-1">Duża moc</p>
                         <p class="about-us-card-text">Będziesz mógł jeździł szybkim autem</p>
                     </div>
-                    <div class="col-sm-6 col-md-4 text-center about-us-card">
+                    <div data-aos="zoom-in" data-aos-delay="250" class="col-sm-6 col-md-4 text-center about-us-card">
                         <p>
                             <i class="fa-solid fa-gas-pump"></i>
                         </p>
                         <p class="about-us-card-title mb-1">Bogate wyposażenie</p>
                         <p class="about-us-card-text">U nas poczujesz się jak prezes</p>
                     </div>
-                    <div class="col-sm-6 col-md-4 text-center about-us-card">
+                    <div data-aos="zoom-in" data-aos-delay="300" class="col-sm-6 col-md-4 text-center about-us-card">
                         <p>
                             <i class="fa-solid fa-hand-holding-dollar"></i>
                         </p>
                         <p class="about-us-card-title mb-1">Niska kaucja</p>
                         <p class="about-us-card-text">Nie musisz mieć 10k zł aby skorzystać z naszych usług</p>
                     </div>
-                    <div class="col-sm-6 col-md-4 text-center about-us-card">
+                    <div data-aos="zoom-in" data-aos-delay="350" class="col-sm-6 col-md-4 text-center about-us-card">
                         <p>
                             <i class="fa-solid fa-road"></i>
                         </p>
@@ -105,14 +106,14 @@
                 <h2 class="section-title">Tworzymy nową społeczność</h2>
                 <div class="underline"></div>
                 <div class="row">
-                    <div class="col-lg-4 text-center about-us-hero-item">
+                    <div data-aos="zoom-in" data-aos-delay="100" class="col-lg-4 text-center about-us-hero-item">
                         <p>
                             <i class="fa-solid fa-road"></i>
                         </p>
                         <p class="about-us-hero-title mb-1">Zloty</p>
                         <p class="about-us-hero-text">Raz w miesiącu spotykamy się aby pogadać o furkach</p>
                     </div>
-                    <div class="col-lg-4 text-center about-us-hero-item">
+                    <div data-aos="zoom-in" data-aos-delay="200" class="col-lg-4 text-center about-us-hero-item">
                         <p>
                             <i class="fa-solid fa-road"></i>
                         </p>
@@ -120,7 +121,7 @@
                         <p class="about-us-hero-text">Organizujemy spektakularne wyjazdy autami. Dostarczamy content'u
                             naszym widzom</p>
                     </div>
-                    <div class="col-lg-4 text-center about-us-hero-item">
+                    <div data-aos="zoom-in" data-aos-delay="300" class="col-lg-4 text-center about-us-hero-item">
                         <p>
                             <i class="fa-solid fa-road"></i>
                         </p>
@@ -325,32 +326,32 @@
             <div class="underline"></div>
             <div class="container">
                 <div class="row mx-auto text-center achievments-list">
-                    <div class="col-lg-4 col-md-6 col-xl-2">
+                    <div class="col-lg-4 col-md-6 col-xl-2" data-aos="zoom-in" data-aos-delay="100">
                         <i class="fa-solid fa-thumbs-up"></i>
                         <p class="achievments-number">100%</p>
                         <p class="achievments-text">Zadowolonych klienów</p>
                     </div>
-                    <div class="col-lg-4 col-md-6 col-xl-2">
+                    <div class="col-lg-4 col-md-6 col-xl-2" data-aos="zoom-in" data-aos-delay="50">
                         <i class="fa-solid fa-trophy"></i>
                         <p class="achievments-number">25</p>
                         <p class="achievments-text">Zdobytych nagród</p>
                     </div>
-                    <div class="col-lg-4 col-md-6 col-xl-2">
+                    <div class="col-lg-4 col-md-6 col-xl-2" data-aos="zoom-in" data-aos-delay="150">
                         <i class="fa-solid fa-user"></i>
                         <p class="achievments-number">5</p>
                         <p class="achievments-text">Pracowników</p>
                     </div>
-                    <div class="col-lg-4 col-md-6 col-xl-2">
+                    <div class="col-lg-4 col-md-6 col-xl-2" data-aos="zoom-in" data-aos-delay="200">
                         <i class="fa-solid fa-car"></i>
                         <p class="achievments-number">3</p>
                         <p class="achievments-text">Samochody</p>
                     </div>
-                    <div class="col-lg-4 col-md-6 col-xl-2">
+                    <div class="col-lg-4 col-md-6 col-xl-2" data-aos="zoom-in" data-aos-delay="50">
                         <i class="fa-solid fa-road"></i>
                         <p class="achievments-number">22</p>
                         <p class="achievments-text">Wyjazdów</p>
                     </div>
-                    <div class="col-lg-4 col-md-6 col-xl-2">
+                    <div class="col-lg-4 col-md-6 col-xl-2" data-aos="zoom-in" data-aos-delay="100">
                         <i class="fa-solid fa-share-nodes"></i>
                         <p class="achievments-number">100.000</p>
                         <p class="achievments-text">fanów na social mediach</p>
@@ -402,6 +403,14 @@
     <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
     <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
     <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            startEvent: 'DOMContentLoaded',
+            offset: 200,
+            once: true,
+        });
+      </script>
     <script src="./js/slick.js"></script>
     <script src="./js/script.js"></script>
 
