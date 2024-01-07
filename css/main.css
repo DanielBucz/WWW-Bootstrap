@@ -46,10 +46,17 @@ nav .navbar-brand {
 nav .navbar-tooggler {
   padding: 10px;
 }
-nav .nav-link, nav .navbar-nav .nav-link.show, nav .navbar-brand, nav .fa-bars {
+nav .nav-link,
+nav .navbar-nav .nav-link.show,
+nav .navbar-brand,
+nav .fa-bars {
   color: #fff;
 }
-nav .nav-link:focus, nav .nav-link:hover, nav .navbar-brand:hover, nav .navbar-nav .nav-link.active, nav .navbar-nav .nav-link.show {
+nav .nav-link:focus,
+nav .nav-link:hover,
+nav .navbar-brand:hover,
+nav .navbar-nav .nav-link.active,
+nav .navbar-nav .nav-link.show {
   color: #039ff0;
 }
 
@@ -180,6 +187,31 @@ nav .nav-link:focus, nav .nav-link:hover, nav .navbar-brand:hover, nav .navbar-n
   transform: scale(1.05);
 }
 
+.team {
+  background-image: url("../img/team-small.jpg");
+  background-position: center;
+}
+.team .card {
+  overflow: hidden;
+  transition: transform 0.3s;
+}
+.team .card img {
+  height: 300px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.team .card .card-body {
+  height: 160px;
+}
+.team .card .card-title {
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  text-align: center;
+}
+.team .card:hover {
+  transform: scale(0.95);
+}
+
 @media (max-height: 769px) and (max-width: 486px) {
   nav {
     background-color: rgba(0, 0, 0, 0.8);
@@ -197,6 +229,9 @@ nav .nav-link:focus, nav .nav-link:hover, nav .navbar-brand:hover, nav .navbar-n
   }
   .about-us-hero {
     background-image: url("../img/lambo-big.jpg");
+  }
+  .team {
+    background-image: url("../img/team-big.jpg");
   }
 }
 @media (min-width: 992px) {
