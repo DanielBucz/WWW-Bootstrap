@@ -188,7 +188,7 @@ nav {
   background-position: center;
   .card {
     overflow: hidden;
-    transition: transform .3s;
+    transition: transform 0.3s;
     img {
       height: 300px;
       object-fit: cover;
@@ -206,11 +206,82 @@ nav {
     transform: scale(0.95);
   }
 }
+.achievments {
+  .achievments-list {
+    padding: 20px 0;
+
+    i {
+      padding: 10px;
+      font-size: 35px;
+      color: #fff;
+      text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.7);
+    }
+    .achievments-number {
+      font-size: 22px;
+    }
+    .achievments-text {
+      font-size: 13px;
+      text-transform: uppercase;
+    }
+  }
+}
+.contact {
+  background-image: url('../img/contact-small.jpg');
+  background-position: center;
+  color: #fff;
+  .underline-contact {
+    background-color: #fff;
+  }
+  .contact-shadow {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: -1;
+  }
+  .social-media {
+      order: 0;
+      i {
+        color: #fff;
+        padding: 10px;
+        font-size: 25px;
+        transition: color .3s;
+      }
+      i:hover {
+        color: colors.$main-color;
+      }
+    }
+    .main-office {
+      order: 1;
+    }
+    .second-office {
+      order: 2;
+    }
+  .row {
+    align-items: center;
+  }
+  .contact-column {
+    text-align: center;
+    margin: 30px 0;
+    .contact-title {
+      font-size: 22px;
+      text-transform: uppercase;
+      margin-bottom: 10px;
+    }
+    .contact-info-item {
+      font-size: 13px;
+    }
+    
+  }
+}
 @media (max-height: 769px) and (max-width: 486px) {
   nav {
     background-color: rgba(0, 0, 0, 0.8);
   }
 }
+
 @media (min-width: 768px) {
   .hero-img {
     background-image: url("../img/bmw-big.jpg");
@@ -229,9 +300,23 @@ nav {
   .team {
     background-image: url("../img/team-big.jpg");
   }
+  .contact {
+    background-image: url('../img/contact-big.jpg');
+  }
 }
 @media (min-width: 992px) {
   html {
     scroll-padding-top: 72px;
+  }
+  .contact {
+    .social-media {
+      order: 1;
+    }
+    .main-office {
+      order: 0;
+    }
+    .second-office {
+      order: 2;
+    }
   }
 }
